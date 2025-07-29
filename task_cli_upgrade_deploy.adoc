@@ -1,0 +1,93 @@
+---
+sidebar: sidebar 
+permalink: task_cli_upgrade_deploy.html 
+keywords: administer, administering, cli, deploy, upgrade deploy 
+summary: Você pode atualizar uma máquina virtual do utilitário Deploy existente no local usando a interface de linha de comando. 
+---
+= Atualizar uma instância do ONTAP Select Deploy
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Você pode atualizar uma máquina virtual do utilitário Deploy existente no local usando a interface de linha de comando.
+
+
+
+== Antes de começar
+
+Certifique-se de que o utilitário Deploy não seja usado para executar nenhuma outra tarefa durante a atualização. Consulte as notas de versão atuais para obter informações e restrições sobre a atualização do utilitário Deploy.
+
+
+NOTE: Se você tiver uma instância mais antiga do utilitário de administração ONTAP Select Deploy instalada, atualize para a versão atual. O nó ONTAP Select e o componente ONTAP Select Deploy são atualizados de forma independente. Consulte link:concept_adm_upgrading_nodes.html["Atualizar os nós ONTAP Select"^] para mais detalhes.
+
+
+
+== Baixe o pacote de atualização
+
+Para iniciar o processo de atualização, você deve baixar o arquivo de atualização da máquina virtual Deploy apropriado no site de suporte da NetApp . O pacote de atualização é formatado como um único arquivo compactado.
+
+.Passos
+. Acesse o link:https://mysupport.netapp.com/site/["Site de suporte da NetApp"^] usando um navegador da web e escolha *Downloads* no menu Downloads.
+. Role para baixo e selecione * ONTAP Select Implantar atualização*.
+. Selecione a versão desejada do pacote de atualização.
+. Revise o Contrato de Licença do Usuário Final (CLUF) e selecione *Aceitar e Continuar*.
+. Selecione e baixe o pacote apropriado, respondendo a todos os prompts conforme necessário para seu ambiente.
+
+
+
+
+== Carregue o pacote na máquina virtual Deploy
+
+Após adquirir o pacote de atualização, você deve carregar o arquivo na máquina virtual Deploy.
+
+.Antes de começar
+Você precisa ter o arquivo de atualização disponível na sua estação de trabalho local. Você também precisa ter a senha da conta de usuário administrador.
+
+.Sobre estas tarefas
+Esta tarefa descreve um método para enviar o arquivo para a máquina virtual de implantação. Pode haver outras opções mais adequadas ao seu ambiente.
+
+.Passos
+. Em um shell de comando na sua estação de trabalho local, use o utilitário scp para carregar o arquivo de imagem na máquina virtual Deploy.
++
+Exemplo
+
++
+....
+scp ONTAPdeploy2.12_upgrade.tar.gz admin@10.228.162.221:/home/admin (provide password when prompted)
+....
+
+
+.Resultado
+O arquivo de atualização é armazenado no diretório inicial do usuário administrador.
+
+
+
+== Aplicar o pacote de atualização
+
+Depois que o arquivo de atualização for carregado na máquina virtual Deploy, você poderá aplicar a atualização.
+
+.Antes de começar
+Você precisa saber em qual diretório o arquivo de atualização foi colocado na máquina virtual do utilitário Deploy. Além disso, certifique-se de que o Deploy não seja usado para executar nenhuma outra tarefa enquanto a atualização estiver em andamento.
+
+.Passos
+. Sign in na CLI do utilitário Deploy usando SSH com a conta de administrador.
+. Execute a atualização usando o caminho do diretório e o nome do arquivo apropriados:
++
+`deploy upgrade -package-path FILEPATH`
+
++
+Exemplo
+
++
+....
+deploy upgrade -package-path /home/admin/ONTAPdeploy2.12_upgrade.tar.gz
+....
+
+
+.Depois que você terminar
+Antes da conclusão do procedimento de atualização, você será solicitado a criar um backup da configuração da máquina virtual de implantação. Além disso, limpe o cache do navegador para poder visualizar as páginas de implantação recém-criadas.
