@@ -127,6 +127,7 @@ Não há suporte para modificar as propriedades das portas ONTAP , incluindo vel
 * Processadores de serviço
 * Migração SVM
 * SnapLock Compliance
+* Sincronização ativa do SnapMirror
 * VMware HCX
 
 
