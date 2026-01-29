@@ -173,10 +173,7 @@ A tabela a seguir fornece o tipo mínimo de licença necessária para o armazena
 2+| Suporte a hipervisor (VMware) 3+| VMware vSphere 7.0GA e atualizações de 1 a 3C VMware vSphere 8.0GA e atualizações de 1 a 3 
 
 
-2+| Suporte a hipervisor (KVM) 3+| RedHat Enterprise Linux 64 bits (KVM) 9.5, 9.4, 9.3, 9.2, 9.1, 9.0, 8.9, 8.8, 8.7 e 8.6 Rocky Linux (KVM) 9 e 8 
-
-
-2+| Software de gestão 3+| Conjunto de gerenciamento NetApp Active IQ Unified Manager ONTAP Select Deploy Utility SnapCenter (opcional) 
+2+| Suporte a hipervisor (KVM) 3+| RedHat Enterprise Linux 64-bit (KVM) 9.5, 9.4, 9.3, 9.2, 9.1, 9.0, 8.9, 8.8, 8.7 e 8.6 Rocky Linux (KVM) KVM no Rocky Linux 9.5, 9.4, 9.3, 9.2, 9.1, 9.0, 8.9, 8.8, 8.7 e 8.6 
 |===
 --
 ====
