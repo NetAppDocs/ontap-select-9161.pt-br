@@ -112,7 +112,7 @@ Como alternativa, pode-se começar criando um único datastore em uma única LUN
 A criação inicial do cluster pode ser usada para criar um cluster ONTAP Select consumindo parte ou todo o espaço no armazenamento de dados inicial. Uma segunda etapa é executar uma ou mais operações de adição de capacidade usando armazenamentos de dados adicionais até que a capacidade total desejada seja atingida. Essa funcionalidade é detalhada na seção link:concept_stor_capacity_inc.html["Aumentar a capacidade de armazenamento"] .
 
 
-NOTE: A sobrecarga do VMFS é diferente de zero (consulte link:https://kb.vmware.com/s/article/1001618["VMware KB 1001618"] ) e tentar usar todo o espaço relatado como livre por um armazenamento de dados resultou em erros espúrios durante as operações de criação do cluster.
+NOTE: A sobrecarga do VMFS é diferente de zero (VMware KB 1001618), e a tentativa de usar todo o espaço relatado como livre por um datastore resultou em erros espúrios durante as operações de criação de cluster.
 
 Um buffer de 2% é deixado sem uso em cada armazenamento de dados. Esse espaço não requer uma licença de capacidade porque não é usado pelo ONTAP Select. O ONTAP Deploy calcula automaticamente o número exato de gigabytes para o buffer, desde que um limite de capacidade não seja especificado. Se um limite de capacidade for especificado, esse tamanho será aplicado primeiro. Se o tamanho do limite de capacidade estiver dentro do tamanho do buffer, a criação do cluster falhará e será exibida uma mensagem de erro especificando o parâmetro de tamanho máximo correto que pode ser usado como limite de capacidade:
 
