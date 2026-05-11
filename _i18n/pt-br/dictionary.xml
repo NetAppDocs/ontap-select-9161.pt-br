@@ -3828,4 +3828,6 @@
   <block id="2cc135ee22f21247b52a24a050dc5f69" category="list-text">Uma licença Premium ou Premium XL</block>
   <block id="3712f888ec8c939491ff4fe2129b3d6e" category="paragraph">MetroCluster SDS é uma opção de configuração ao criar um cluster de dois nós ONTAP Select. É semelhante a uma implementação de escritório remoto/filial (ROBO). Essa implementação aprimorada de dois nós oferece cenários de caso de uso adicionais. Você deve estar ciente dos requisitos e restrições ao se preparar para implementar MetroCluster SDS.</block>
   <block id="03cb40fe1372475f8e49ebd07e5d2d9c" category="admonition">A sobrecarga do VMFS é diferente de zero (VMware KB 1001618), e a tentativa de usar todo o espaço relatado como livre por um datastore resultou em erros espúrios durante as operações de criação de cluster.</block>
+  <block id="02eaca23acd9bd60cfee240891736083" category="inline-link-macro">FlexCache write-back com ONTAP Select</block>
+  <block id="829a60be78f33e711c960543ff962d08" category="paragraph">Existem limitações no suporte para FlexCache write-back com ONTAP Select. Para obter mais informações, consulte <block ref="43b5c38e400537347d857d4ad7b2dd01" category="inline-link-macro-rx"></block>.</block>
 </blocks>
