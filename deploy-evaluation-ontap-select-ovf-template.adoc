@@ -19,13 +19,13 @@ Você pode implantar rapidamente uma instância de avaliação de 90 dias de um 
 .Sobre esta tarefa
 * Você não precisa obter um número de série ou licença de capacidade de armazenamento da NetApp.
 * Você pode alocar a mesma quantidade de armazenamento para dados do usuário que uma licença adquirida.
-* Você não pode atualizar o nó de uma licença de avaliação para uma licença comprada.
 * Você só pode usar uma conta vCenter para implantar o modelo OVF. A instalação direta em um host ESXi não é suportada no momento.
 * Você deve instalar o modelo OVF (contido em um arquivo ova) usando o cliente autônomo vSphere ou o cliente web vSphere (a única opção para ESXi 6.5 e posteriores). Não use o utilitário de administração ONTAP Select Deploy.
 
 
 
 
+[[prepare-the-ontap-select-cluster-host]]
 == Preparar o host do cluster ONTAP Select
 
 Use os seguintes requisitos para preparar o host ESXi onde o cluster ONTAP Select será implantado. A descrição da plataforma é baseada na configuração do tipo de instância padrão ou pequena com armazenamento de conexão direta (DAS) local formatado usando o sistema de arquivos VMFS-5 ou VMFS-6.
@@ -36,6 +36,7 @@ Para obter informações adicionais sobre as opções de configuração do host,
 
 
 
+[[deploy-a-single-node-ontap-select-cluster-using-an-ovf-template]]
 == Implantar um cluster ONTAP Select de nó único usando um modelo OVF
 
 Conclua as etapas a seguir em um servidor host ESXi de 64 bits compatível.

@@ -18,6 +18,7 @@ Você pode atualizar uma máquina virtual do utilitário Deploy existente no loc
 
 
 
+[[before-you-begin]]
 == Antes de começar
 
 Certifique-se de que Deploy não seja usado para executar outras tarefas durante a atualização. Consulte as notas de versão atuais para obter informações e restrições sobre a atualização do utilitário Deploy.
@@ -27,6 +28,7 @@ NOTE: Se você tiver uma instância mais antiga do utilitário de administraçã
 
 
 
+[[download-the-upgrade-package]]
 == Baixe o pacote de upgrade
 
 Para iniciar o processo de atualização, você deve baixar o arquivo de atualização apropriado da máquina virtual Deploy no site de suporte da NetApp. O pacote de atualização está formatado como um único arquivo compactado.
@@ -41,6 +43,7 @@ Para iniciar o processo de atualização, você deve baixar o arquivo de atualiz
 
 
 
+[[upload-the-package-to-the-deploy-virtual-machine]]
 == Faça o upload do pacote para a máquina virtual Deploy
 
 Após adquirir o pacote de atualização, você deve carregar o arquivo na máquina virtual Deploy.
@@ -67,6 +70,7 @@ O arquivo de atualização é armazenado no diretório inicial do usuário admin
 
 
 
+[[apply-the-upgrade-package]]
 == Aplique o pacote de atualização
 
 Após o arquivo de atualização ser carregado na máquina virtual Deploy, você pode aplicar a atualização.

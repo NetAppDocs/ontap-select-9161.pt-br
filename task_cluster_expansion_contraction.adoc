@@ -35,6 +35,7 @@ Você inicia os procedimentos de expansão e contração do cluster no ONTAP Sel
 
 
 
+[[hardware-and-storage-considerations]]
 == Considerações sobre hardware e armazenamento
 
 As funcionalidades de expansão e contração do cluster são restritas das seguintes maneiras:
@@ -53,6 +54,7 @@ As funcionalidades de expansão e contração do cluster são restritas das segu
 
 
 
+[[expand-the-cluster]]
 == Expandir o cluster
 
 Você pode aumentar o tamanho de um cluster existente de seis nós para um cluster de oito nós com o recurso de expansão de cluster.
@@ -100,6 +102,7 @@ Após expandir o cluster, você deve fazer backup dos dados de configuração do
 
 
 
+[[contract-the-cluster]]
 == Contrair o cluster
 
 Você pode diminuir o tamanho de um cluster existente de oito nós para seis nós com o recurso de contração de cluster.
