@@ -1530,7 +1530,6 @@
   <block id="bbe48fb854ea022537208eeeff822f91" category="list-title">Sobre esta tarefa</block>
   <block id="f9f5faecdbf3b023cf5652fa18b8c4ee" category="list-text">Você não precisa obter um número de série ou licença de capacidade de armazenamento da NetApp.</block>
   <block id="591ba54105fed20bc4bc8e31cee68eb3" category="list-text">Você pode alocar a mesma quantidade de armazenamento para dados do usuário que uma licença adquirida.</block>
-  <block id="10db4e06bde0886ecc0f97ce3a350d45" category="list-text">Você não pode atualizar o nó de uma licença de avaliação para uma licença comprada.</block>
   <block id="de68e769353f85803d50af3ad5192201" category="list-text">Você só pode usar uma conta vCenter para implantar o modelo OVF. A instalação direta em um host ESXi não é suportada no momento.</block>
   <block id="3becac3f3a46d46f0df7e4df7b69a359" category="list-text">Você deve instalar o modelo OVF (contido em um arquivo ova) usando o cliente autônomo vSphere ou o cliente web vSphere (a única opção para ESXi 6.5 e posteriores). Não use o utilitário de administração ONTAP Select Deploy.</block>
   <block id="324b9a453c1c067658adca4be37dbae0" category="section-title">Preparar o host do cluster ONTAP Select</block>
@@ -2079,7 +2078,6 @@
   <block id="690f3dfc132299176ff75952d43e8d9d" category="list-text">Cópias instantâneas à prova de violação</block>
   <block id="d8d124daaa3196fc86bdde707e37359d" category="admonition">Você não precisa de uma licença FabricPool ao utilizar o StorageGRID.</block>
   <block id="c3c1ba002ed4d0d1ae23559793a734bd" category="inline-link-macro">Comparando ONTAP Select e ONTAP 9</block>
-  <block id="77aaedb7dde5f69b11a5683a958edbfc" category="list-text"><block ref="77aaedb7dde5f69b11a5683a958edbfc" category="inline-link-macro-rx"></block></block>
   <block id="ffa1963f0d0a25dfc04554dbe791a3b1" category="inline-link-macro">Chaves de licença principais do NetApp ONTAP</block>
   <block id="16f9dd2af311dfdedd3814899d379c54" category="list-text"><block ref="16f9dd2af311dfdedd3814899d379c54" category="inline-link-macro-rx"></block></block>
   <block id="3c5bdd4a077d520c4b4870fb15f37d1b" category="summary">A versão atual inclui vários novos recursos ou melhorias específicas do ONTAP Select.</block>
@@ -3155,8 +3153,6 @@
   <block id="6f78f7cef2637ad960245873ccb009cc" category="list-text">Preparar para anexar armazenamento ao nó ONTAP Select</block>
   <block id="14ce7f56600ce32dd333637eed98cd8f" category="open-title">RAID de hardware</block>
   <block id="66ef34be992df3691380b5f366935c14" category="inline-link-macro">pool de armazenamento (KVM)</block>
-  <block id="e6590b92b825641d452dbbfa0d4cf1d1" category="paragraph">Se você usar um controlador RAID de hardware local, deverá criar pelo menos um armazenamento de dados (ESX) ou um <block ref="a828881b33208a7c4812d178d14998a2" category="inline-link-macro-rx"></block> em cada nó para os dados do sistema, bem como para a raiz e os agregados de dados. Você deve anexar o pool de armazenamento como parte da configuração do nó ONTAP Select .</block>
-  <block id="19d8e46deea8d239f3274a92f88038ab" category="paragraph">Se você usar RAID de software, deverá criar pelo menos um armazenamento de dados (ESX) ou um <block ref="a828881b33208a7c4812d178d14998a2" category="inline-link-macro-rx"></block> para os dados do sistema e certifique-se de que as unidades SSD estejam disponíveis para os agregados raiz e de dados. Você deve anexar o pool de armazenamento e os discos como parte da configuração do nó ONTAP Select .</block>
   <block id="d5ba525828b35ea241ddabb08b074ffd" category="list-text">Versões ONTAP Select disponíveis</block>
   <block id="908272d4cd58c61b9a3bc042f376ee86" category="inline-link-macro">adicione a imagem ONTAP Select</block>
   <block id="e037f6aae5e648de44fa07863c350701" category="paragraph">O utilitário de administração Deploy contém uma única versão do ONTAP Select. Se você deseja implantar clusters usando uma versão anterior do ONTAP Select, você deve primeiro <block ref="6403b9b63d70488e119e79bd63bd10d8" category="inline-link-macro-rx"></block> para sua instância de implantação.</block>
@@ -3322,8 +3318,6 @@
   <block id="6bf206aa142c608ffc9dfde649825ec0" category="inline-link-macro">Instalar ONTAP Select Implantar</block>
   <block id="06a53967f62b6ebf8a1fba55cabdfecf" category="list-text"><block ref="06a53967f62b6ebf8a1fba55cabdfecf" category="inline-link-macro-rx"></block></block>
   <block id="89ac05efab2228e74e12191efccdf85c" category="inline-link-macro">Restaurar os dados de configuração de implantação para a nova máquina virtual</block>
-  <block id="9731a2aaf926f5fd46b5a7343839efb4" category="list-text"><block ref="9731a2aaf926f5fd46b5a7343839efb4" category="inline-link-macro-rx"></block></block>
-  <block id="907984c60dd3b3b1d06b28812739f3a3" category="list-text"><block ref="907984c60dd3b3b1d06b28812739f3a3" category="inline-link-macro-rx"></block></block>
   <block id="010b1bb88703436584f35ee315ce708a" category="summary">Você pode migrar uma instância existente do utilitário de administração Deploy para uma nova máquina virtual usando a interface de linha de comando.</block>
   <block id="e3bfc1919cc23daba80c8010e3175d9c" category="doc">Migrar uma instância do ONTAP Select Deploy para uma nova máquina virtual</block>
   <block id="55327b42261932bc23e2c7dff5397072" category="paragraph">Este procedimento baseia-se na criação de uma nova máquina virtual que utiliza os dados de configuração da máquina virtual original. As máquinas virtuais nova e original devem executar a mesma versão e lançamento do utilitário de implantação. Não é possível migrar para uma versão e lançamento diferentes do utilitário de implantação.</block>
@@ -3830,4 +3824,9 @@
   <block id="03cb40fe1372475f8e49ebd07e5d2d9c" category="admonition">A sobrecarga do VMFS é diferente de zero (VMware KB 1001618), e a tentativa de usar todo o espaço relatado como livre por um datastore resultou em erros espúrios durante as operações de criação de cluster.</block>
   <block id="02eaca23acd9bd60cfee240891736083" category="inline-link-macro">FlexCache write-back com ONTAP Select</block>
   <block id="829a60be78f33e711c960543ff962d08" category="paragraph">Existem limitações no suporte para FlexCache write-back com ONTAP Select. Para obter mais informações, consulte <block ref="43b5c38e400537347d857d4ad7b2dd01" category="inline-link-macro-rx"></block>.</block>
+  <block id="6e1243914ebc1fc5867ce44540c39b39" category="list-text"><block ref="6e1243914ebc1fc5867ce44540c39b39" category="inline-link-macro-rx"></block></block>
+  <block id="71899ba242d53dc1852e2afd35f4bf4a" category="paragraph">Se você utiliza um controlador RAID local, é necessário criar pelo menos um datastore (ESX) ou um <block ref="91f06d9f052d8b4c88dd49c62ddbf249" category="inline-link-macro-rx"></block> em cada nó para os dados do sistema, bem como para os agregados raiz e de dados. Você deve anexar o pool de storage como parte da configuração do nó ONTAP Select.</block>
+  <block id="2ce8ff0e84e7712b0b593cd8a3d974aa" category="paragraph">Se você utiliza RAID por software, é necessário criar pelo menos um datastore (ESX) ou um <block ref="91f06d9f052d8b4c88dd49c62ddbf249" category="inline-link-macro-rx"></block> para os dados do sistema e garantir que as unidades SSD estejam disponíveis para os agregados raiz e de dados. Você deve conectar o pool de storage e os discos como parte da configuração do nó ONTAP Select.</block>
+  <block id="a8038442da6adccc95dc96f901c895e3" category="list-text"><block ref="a8038442da6adccc95dc96f901c895e3" category="inline-link-macro-rx"></block></block>
+  <block id="241b4315fc3c4e6905896340939f6270" category="list-text"><block ref="241b4315fc3c4e6905896340939f6270" category="inline-link-macro-rx"></block></block>
 </blocks>

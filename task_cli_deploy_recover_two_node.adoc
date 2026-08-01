@@ -214,6 +214,6 @@ Se você usar o licenciamento de Pools de Capacidade, será necessário reinstal
 
 .Informações relacionadas
 * link:task_install_deploy.html["Instalar ONTAP Select Implantar"]
-* link:task_cli_migrate_deploy.html#restoring-the-deploy-configuration-data-to-the-new-virtual-machine["Restaurar os dados de configuração de implantação para a nova máquina virtual"]
-* link:task_adm_licenses.html#reinstalling-a-capacity-pool-license["Reinstalar uma licença do Capacity Pool"]
+* link:task_cli_migrate_deploy.html#restore-the-deploy-configuration-data-to-the-new-virtual-machine["Restaurar os dados de configuração de implantação para a nova máquina virtual"]
+* link:task_adm_licenses.html#reinstall-a-capacity-pool-license["Reinstalar uma licença do Capacity Pool"]
 
